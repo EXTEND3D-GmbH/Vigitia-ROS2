@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>degginger_draw</name>
+  <version>0.1.0</version>
+  <description>Simple Drawing App for Degginger with touch tracking</description>
+  <maintainer email="chris.brammer@extend3d.de">Chris Brammer</maintainer>
+  <license>LGPL</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <build_depend>qt5-qmake</build_depend>
+  <build_depend>qtbase5-dev</build_depend>
+
+  <exec_depend>libqt5-core</exec_depend>
+  <exec_depend>libqt5-gui</exec_depend>
+
+  <depend>opencv2</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>image_geometry</depend>
+  <depend>sensor_msgs</depend>
+  <depend>touch_interfaces</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

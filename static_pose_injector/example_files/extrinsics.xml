@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Pose Version="1.1">
+	<Quaternion x="-0.046173488717965991" y="-0.010231282845767336" z="-0.015465788948984158" w="0.99876130239568617"/>
+	<Translation x="-127.20694812802058" y="-71.7519175155836" z="-151.24365288513661"/>
+	<General Level="0" ImageCount="0" MeasurementCount="0" Residual="0"/>
+</Pose>

@@ -1,0 +1,16 @@
+string projector_topic
+string camera_topic
+string camera_info_topic
+string depth_topic
+float64 depth_scale_to_m # multiplicator to metric
+uint32 grid_width
+uint32 grid_height
+uint32 projector_width
+uint32 projector_height
+string save_path # Optional path where an xml representation of the successful calibration is saved
+---
+sensor_msgs/CameraInfo info
+float64[9] r # Rotation matrix
+float64[3] t # Translation
+---
+string message

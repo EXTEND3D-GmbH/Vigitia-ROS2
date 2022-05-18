@@ -1,0 +1,17 @@
+/.vs/etrackd/v14
+Debug
+/*.db
+/*.opendb
+/x64/Release
+/doc
+.vs/
+TestReports/
+/x64/Development
+[Oo][Uu][Tt]/
+vcpkg_installed/
+
+*.aps
+build/
+
+*.generated.ts
+__pycache__/
