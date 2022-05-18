@@ -1,3 +1,10 @@
+# Vigitia
+![Vigita-Skizze](https://user-images.githubusercontent.com/74293493/169037302-4e572fdb-9c26-44a8-b6fd-9bb88573f824.png)
+
+Im Verbundprojekt VIGITIA untersuchen die Projektpartner, wie projizierte erweiterte Realität (projected augmented reality / PAR) Alltagsinteraktionen rund um Tische unterstützen und bereichern kann.
+
+Bei PAR nehmen eine oder mehrere Kameras in Echtzeit die Tischoberfläche und darauf befindliche Objekte auf. Ein an der Decke oder an einem Schwenkarm befestigter Projektor kann dadurch millimetergenau und ohne Verzerrungen auf die Tischplatte bzw. die Objekte projizieren. Dies erlaubt es, zusätzliche Informationen und Interaktionsmöglichkeiten zu den Objekten einzublenden und analoge Arbeitsprozesse zu unterstützen. Parallel dazu besteht dennoch die Möglichkeit, bereits vorhandene, intelligente Gegenstände wie z.B. Smartphones, Tablets oder Laptops nahtlos in das System zu integrieren, um beispielsweise über die Projektion als Vermittler Daten zwischen den Geräten auszutauschen oder eine größere Interaktionsfläche für mehrere Personen zu bieten, als der kleine Smartphone-Bildschirm es ermöglicht. Hierbei tritt die Technik in den Hintergrund und stattdessen rückt das gemeinsame Erleben in den Vordergrund, welches durch die Technik nur auf Wunsch unterstützt wird.
+
 # Description
 This repository contains solutions to calibrate an RGBD Kinect camera to an arbitrary projector as well as a rudimentary drawing app based on touch tracking. The touch tracker paint app is Windows specific as it injectes detected touches into the OS to allow the user to use the desktop environment.
 
