@@ -30,6 +30,10 @@ The touch tracker uses the saved xml files from the calibration as input and pos
   - To fix the background (recommended) you can use a service call `ros2 service call /background_node/set_fix_background std_srvs/srv/SetBool "{data: true}"`
 
 ### Typical issues
+
+#### k4a.dll not found
+Windows CMake from the AzureKinect Driver sometimes fails to copy the appropriate dlls on install. The needed dlls can be found in `src\Azure_Kinect_ROS_Driver-foxy-devel\install\azure_kinect_ros_driver\lib\azure_kinect_ros_driver\` and be placed next to the `node.exe` e.g. in `install\Lib\azure_kinect_ros_driver\`
+
 #### Touch detection is not working
 The touch detection has a bunch of settings which can be adjusted in `touch_tracker/inlcude/Settings.h` to get precise and consistent results. For more information please see `DIRECT: Practical Touch Tracking on Surfaces with Hybrid Depth-Infrared Sensing (ISS ’16) - Robert Xiao`
 

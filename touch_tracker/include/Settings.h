@@ -29,7 +29,7 @@ struct TouchTrackerSettings
 	int hand_min_size = 25;				 // px: minimum size of hand blob
 	int finger_min_size = 10;			 // px: minimum size of finger blob
 	int finger_min_dist = 4;			 // px: finger minimum length (distance); shorter "fingers" are pruned
-	unsigned int tip_max_dist = 30;		 // px: maximum flood distance for tip fill (if exceeded, rollback)
+	unsigned int tip_max_dist = 50;		 // px: maximum flood distance for tip fill (if exceeded, rollback)
 	unsigned int finger_max_dist = 200;	 // px: maximum flood distance for tip fill (if exceeded, rollback)
 
 	/// postprocessing settings
