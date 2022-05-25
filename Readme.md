@@ -1,3 +1,10 @@
+
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://www.extend3d.com/wp-content/themes/extend3d/dist/images/LOGO.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/74293493/170223696-34f5027b-a37a-4b78-bd5d-164381ff5b80.svg">
+  <img alt="Extend3D GmbH Logo">
+</picture>
+
 # Vigitia
 ![Vigita-Skizze](https://user-images.githubusercontent.com/74293493/169037302-4e572fdb-9c26-44a8-b6fd-9bb88573f824.png)
 
