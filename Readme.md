@@ -15,6 +15,11 @@ Bei PAR nehmen eine oder mehrere Kameras in Echtzeit die Tischoberfläche und da
 # Description
 This repository contains solutions to calibrate an RGBD Kinect camera to an arbitrary projector as well as a rudimentary drawing app based on touch tracking. The touch tracker paint app is Windows specific as it injectes detected touches into the OS to allow the user to use the desktop environment.
 
+## Needed packages (Windows)
+Start an x64 Development Console and source ROS2 e.g.: `C:\opt\ros\foxy\x64\setup.bat`
+
+Install `numpy-quaternion` via: `python -m pip install --upgrade --force-reinstall numpy-quaternion`
+
 ## How to calibrate
 - Build the project
 - Start the services with `ros2 launch src/launch/calibration.launch.py`
@@ -30,7 +35,9 @@ This repository contains solutions to calibrate an RGBD Kinect camera to an arbi
 The touch tracker uses the saved xml files from the calibration as input and posts them on the appropriate topics as a camera_info as well as a tf frame.
 - Start all nodes with `ros2 launch src/launch/touch.launch.py`
   - Note that either the calibration or the touch tracker can be started at a time in the current configuration
+  - Do not forget to set the correct launch arguments on the command line or in the launch file for the calibration files that were saved during calibration.
 - The `static_pose_injector` will inject the projector calibration on the appropriate topics
+  - Two launch parameters can be set to define the path to the projector intrinsics and extrinsics
 - `degginger_draw` will spawn a window which will listen to published touch events and inject them into windows events, such that they are received on the same monitor/projector on which the window is visible.
 - `touch_tracker` uses the Azure Kinect to detect touches and publishes them
   - Internally it uses a leanring background which takes 5-10 seconds to completely refresh on a static scene
